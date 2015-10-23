@@ -229,6 +229,10 @@ class GooglePlaces
                     {
                         unset($this->rankby, $parameters['rankby']);
                     }
+                    if (isset($parameters['sensor']))
+                    {
+                        unset($this->sensor, $parameters['sensor']);
+                    }
 
                     break;
             }
