@@ -184,6 +184,15 @@ class GooglePlaces
                         throw new \Exception('You must specify a query before calling textsearch().');
                     }
 
+                    if (isset($parameters['rankby']))
+                    {
+                        unset($this->rankby, $parameters['rankby']);
+                    }
+                    if (isset($parameters['sensor']))
+                    {
+                        unset($this->sensor, $parameters['sensor']);
+                    }
+
                     break;
 
                 case 'radarsearch':
