@@ -1,15 +1,5 @@
 # php-googleplaces
 
-[![Build Status](http://img.shields.io/travis/joshtronic/php-googleplaces.svg?style=flat)][travis]
-[![Coverage Status](http://img.shields.io/coveralls/joshtronic/php-googleplaces.svg?style=flat)][coveralls]
-[![Downloads](http://img.shields.io/packagist/dm/joshtronic/php-googleplaces.svg?style=flat)][packagist]
-[![Gittip](http://img.shields.io/gittip/joshtronic.svg?style=flat)][gittip]
-
-[travis]:    http://travis-ci.org/joshtronic/php-googleplaces
-[coveralls]: https://coveralls.io/r/joshtronic/php-googleplaces
-[packagist]: https://packagist.org/packages/joshtronic/php-googleplaces
-[gittip]:    https://www.gittip.com/joshtronic/
-
 PHP Wrapper for the Google Places API.
 
 ## Origins
@@ -90,8 +80,4 @@ $details                  = $google_places->details();
 ```
 
 ## The Future
-
-The project that I created this library for is now defunct so I’m not actively
-using it or hacking on it. That being said, if there’s something you want to
-see included or you find a bug, just open an issue or grow a pair and fork,
-hack and send a pull request ;)
+FORK
