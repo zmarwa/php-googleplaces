@@ -183,32 +183,6 @@ class GooglePlaces
                     {
                         throw new \Exception('You must specify a query before calling textsearch().');
                     }
-                    elseif (isset($parameters['rankby']))
-                    {
-                        switch ($parameters['rankby'])
-                        {
-                            case 'distance':
-                                if (!isset($parameters['keyword'])
-                                    && !isset($parameters['name'])
-                                    && !isset($parameters['types']))
-                                {
-                                    throw new \Exception('You much specify at least one of the following: "keyword", "name", "types".');
-                                }
-
-                                if (isset($parameters['radius']))
-                                {
-                                    unset($this->radius, $parameters['radius']);
-                                }
-                                break;
-
-                            case 'prominence':
-                                if (!isset($parameters['radius']))
-                                {
-                                    throw new \Exception('You must specify a radius.');
-                                }
-                                break;
-                        }
-                    }
 
                     break;
 
